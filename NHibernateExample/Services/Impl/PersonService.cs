@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using NHibernateExample.Dao;
-using NHibernateExample.Dao.Impl;
 using NHibernateExample.Entities;
 using NHibernateExample.Utils;
 
@@ -33,6 +32,16 @@ namespace NHibernateExample.Services.Impl
             foreach (Person p in personList)
             {
                 PersonUtils.PrintPerson(p);
+            }
+        }
+
+        public void PrintAllCities()
+        {
+            IList<string> cityList = _personDao.ListAllCities();
+
+            foreach (string c in cityList)
+            {
+                Console.WriteLine(c);
             }
         }
 

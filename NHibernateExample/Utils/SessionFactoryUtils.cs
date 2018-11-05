@@ -1,9 +1,8 @@
-﻿using System.Reflection;
-using NHibernateExample.Entities.Base;
-using FluentNHibernate.Cfg;
+﻿using FluentNHibernate.Cfg;
 using FluentNHibernate.Cfg.Db;
 using FluentNHibernate.Conventions.Helpers;
 using NHibernate;
+using NHibernateExample.Entities.Base;
 
 namespace NHibernateExample.Utils
 {
@@ -24,7 +23,7 @@ namespace NHibernateExample.Utils
 
                 .Mappings(m => m.FluentMappings
                     .AddFromAssemblyOf<Entity>() // Add all Mappings for descendants of Entity
-                    
+
                     // Conventions to specify that all Properties (and Primary Key)
                     // look like "TABLE_PROPERTY"
                     // e.g. "PERSON_NAME" / "DOG_ID"

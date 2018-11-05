@@ -1,8 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using NHibernateExample.Entities.Base;
-using NHibernateExample.Utils;
 using NHibernate;
+using NHibernateExample.Entities.Base;
 
 namespace NHibernateExample.Dao.Impl
 {

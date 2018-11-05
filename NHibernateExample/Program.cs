@@ -17,6 +17,7 @@ namespace NHibernateExample
 
                 // _personService.PrintPersonIds();
                 // _personService.PrintAllPeople();
+                // _personService.PrintAllCities();
                 // _personService.PrintPersonById(5);
                 // _personService.SavePerson(PersonUtils.CreateValidPerson());
                 // _personService.SavePerson(PersonUtils.CreateInvalidPerson());
@@ -24,7 +25,7 @@ namespace NHibernateExample
                 // _personService.EditPerson(PersonUtils.CreatePersonForEdit(3));
                 // _personService.DeletePerson(4);
 
-                // Note: You can call any of the first 3 Methods
+                // Note: You can call any of the first 4 Methods
                 // multiple times consecutively, to test if the
                 // caching works properly (only 1 of the same query
                 // will be fired)

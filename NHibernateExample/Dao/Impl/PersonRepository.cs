@@ -16,6 +16,7 @@ namespace NHibernateExample.Dao.Impl
                 .QueryOver<Person>()
                 .Where(x => x.Address != null)
                 .Select(x => x.Address.City)
+                .Cacheable()
                 .List<string>();
         }
     }
