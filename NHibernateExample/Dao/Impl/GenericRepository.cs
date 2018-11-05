@@ -8,12 +8,11 @@ namespace NHibernateExample.Dao.Impl
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : Entity
     {
-
         private ISessionFactory _sessionFactory;
 
-        public GenericRepository()
+        public GenericRepository(ISessionFactory sessionFactory)
         {
-            _sessionFactory = SessionFactoryUtils.GetSessionFactory();
+            _sessionFactory = sessionFactory;
         }
 
         protected ISession OpenSession()

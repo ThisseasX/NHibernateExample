@@ -11,9 +11,9 @@ namespace NHibernateExample.Services.Impl
     {
         private IPersonRepository _personDao;
 
-        public PersonService()
+        public PersonService(IPersonRepository personDao)
         {
-            _personDao = new PersonRepository();
+            _personDao = personDao;
         }
 
         public void PrintPersonIds()
